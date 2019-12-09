@@ -49,6 +49,11 @@ variable "private_network_only" {
   default = false
 }
 
+variable "single_cluster_mode" {
+  description = "If set to false, the installer deploys the IBM Multicloud Manager hub and the user can configure IBM Multicloud Manager features."
+  default = true
+}
+
 ##### ICP Instance details ######
 
 variable "boot" {
